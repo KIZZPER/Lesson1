@@ -2,7 +2,7 @@ import torch
 
 
 def create_tensors():
-    # === Задание 1.1: Создание тензоров ===
+    # Задание 1.1: Создание тензоров
 
     # Тензор 3x4, случайные числа от 0 до 1
     t_rand = torch.rand(3, 4)
@@ -24,7 +24,7 @@ def create_tensors():
 
 
 def tensor_operations():
-    # === Задание 1.2: Операции с тензорами ===
+    # Задание 1.2: Операции с тензорами
 
     A = torch.rand(3, 4)
     B = torch.rand(4, 3)
@@ -48,7 +48,7 @@ def tensor_operations():
 
 
 def indexing_and_slicing():
-    # === Задание 1.3: Индексация и срезы ===
+    # Задание 1.3: Индексация и срезы
 
     # Тензор 5x5x5
     T = torch.randn(5, 5, 5)
@@ -71,7 +71,7 @@ def indexing_and_slicing():
 
 
 def shape_manipulation():
-    # === Задание 1.4: Работа с формами ===
+    # Задание 1.4: Работа с формами
 
     t = torch.arange(24)
     shapes = [(2, 12), (3, 8), (4, 6), (2, 3, 4), (2, 2, 2, 3)]

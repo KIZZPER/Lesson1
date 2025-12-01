@@ -3,7 +3,7 @@ import time
 
 
 def create_large_matrices():
-    # === Задание 3.1: Подготовка данных ===
+    # Задание 3.1: Подготовка данных
 
     sizes = [
         (64, 1024, 1024),
@@ -18,7 +18,7 @@ def create_large_matrices():
 
 
 def measure_time(func, device_type='cpu', runs=10):
-    # === Задание 3.2: Функция измерения времени ===
+    # Задание 3.2: Функция измерения времени
 
     if device_type == 'cuda':
         start = torch.cuda.Event(enable_timing=True)
@@ -50,7 +50,7 @@ def measure_time(func, device_type='cpu', runs=10):
 
 
 def compare_operations():
-    # === Задание 3.3: Сравнение операций CPU vs CUDA ===
+    # Задание 3.3: Сравнение операций CPU vs CUDA
 
     size = 2048
 
@@ -91,7 +91,6 @@ def compare_operations():
         }
     }
 
-    # Заголовок таблицы (оставляем, так как это результат)
     print(f"{'Операция':<25} | {'CPU (мс)':<10} | {'GPU (мс)':<10} | {'Ускорение':<10}")
     print("-" * 65)
 
